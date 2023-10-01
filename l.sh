@@ -1,5 +1,8 @@
+mass=()
 
 while read -r line
 do
-    echo "$line"
+   mass+=("$line")
 done
+
+echo "${mass[*]}"
